@@ -1,0 +1,9 @@
+  :root{
+    --bg:#12141a; --panel:#1b1e27; --panel2:#20242f; --border:#2c3040;
+    --text:#e6e8ee; --text-dim:#9aa0b0; --accent:#4f8cff; --accent2:#3fd6a0;
+    --danger:#e2554f; --radius:8px;
+  }
+  body.light-theme{
+    --bg:#f5f6f8; --panel:#ffffff; --panel2:#eef0f4; --border:#dbdfe6;
+    --text:#1b1e27; --text-dim:#6b7280;
+  }

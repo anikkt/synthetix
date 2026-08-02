@@ -1,0 +1,8 @@
+  button{background:var(--accent);color:#fff;border:none;border-radius:6px;padding:8px 14px;
+    font-size:13px;cursor:pointer;}
+  button.secondary{background:var(--panel2);border:1px solid var(--border);color:var(--text);}
+  button.link{background:transparent;color:var(--accent);padding:4px 0;}
+  button:hover{opacity:.9;}
+  select,input,textarea{background:var(--panel2);border:1px solid var(--border);color:var(--text);
+    border-radius:6px;padding:7px 10px;font-size:13px;font-family:inherit;}
+  textarea{width:100%;min-height:70px;resize:vertical;font-family:Consolas,monospace;}

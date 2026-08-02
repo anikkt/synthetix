@@ -1,0 +1,36 @@
+  /* ---------- Sidebar ---------- */
+  #sidebar{width:220px;background:var(--panel);border-right:1px solid var(--border);
+    display:flex;flex-direction:column;flex-shrink:0;transition:width .15s ease;position:relative;}
+  #sidebar.collapsed{width:56px;}
+  #sidebar .brand-row{display:flex;align-items:center;justify-content:space-between;
+    padding:16px 16px;border-bottom:1px solid var(--border);}
+  #sidebar .brand{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;}
+  #sidebar .brand span{color:var(--accent);}
+  #sidebar.collapsed .brand{display:none;}
+  #pinBtn{width:22px;height:22px;border-radius:50%;background:var(--panel2);border:1px solid var(--border);
+    color:var(--text-dim);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:0;}
+  #pinBtn svg{transition:transform .15s ease;}
+  #sidebar.collapsed #pinBtn svg{transform:rotate(180deg);}
+
+  .nav-item{padding:12px 16px;cursor:pointer;font-size:14px;color:var(--text-dim);
+    border-left:3px solid transparent;user-select:none;display:flex;align-items:center;gap:10px;white-space:nowrap;}
+  .nav-item:hover{background:var(--panel2);color:var(--text);}
+  .nav-item.active{background:var(--panel2);color:var(--text);border-left-color:var(--accent);font-weight:600;}
+  .nav-item .icon{flex-shrink:0;width:16px;height:16px;}
+  .nav-item .label{overflow:hidden;}
+  .nav-item .chevron{margin-left:auto;font-size:10px;transition:transform .15s;}
+  .nav-item.open .chevron{transform:rotate(180deg);}
+  #sidebar.collapsed .label,#sidebar.collapsed .chevron{display:none;}
+  #sidebar.collapsed .nav-item{justify-content:center;}
+
+  .nav-sub{overflow:hidden;max-height:0;transition:max-height .15s ease;}
+  .nav-sub.open{max-height:200px;}
+  .nav-subitem{padding:10px 16px 10px 42px;font-size:13px;color:var(--text-dim);cursor:pointer;
+    border-left:3px solid transparent;white-space:nowrap;overflow:hidden;}
+  .nav-subitem:hover{background:var(--panel2);color:var(--text);}
+  .nav-subitem.active{color:var(--text);border-left-color:var(--accent2);font-weight:600;}
+  #sidebar.collapsed .nav-sub{display:none;}
+
+  #sidebar .footer{margin-top:auto;padding:12px 16px;font-size:11px;color:var(--text-dim);border-top:1px solid var(--border);white-space:nowrap;overflow:hidden;}
+  #sidebar.collapsed .footer{display:none;}
+
